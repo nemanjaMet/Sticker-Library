@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.stickerlibrary">
+    package="com.nemanjamet.stickerlibrary">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:theme="@style/Theme.StickerLibrary" >
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.nemanjamet.stickerlibrary.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

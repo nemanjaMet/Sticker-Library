@@ -81,7 +81,7 @@
 
     <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-    <com.example.stickerlibrary.custom_views.StickerHolderView
+    <com.nemanjamet.stickerlibrary.custom_views.StickerHolderView
         android:id="@+id/sticker_holder_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
