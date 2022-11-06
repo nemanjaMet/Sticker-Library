@@ -3,16 +3,35 @@ Sticker Library
 
 Sticker Library is open source library to help you easy and fast to add image and text sticker in your project.
 
+How to add dependency?
+-------------------
+
+Add below codes to your root build.gradle file:
+
+```gradle
+	allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+And add a dependency code to your module's build.gradle file:
+
+```gradle
+	dependencies {
+	       implementation 'com.github.nemanjaMet:Sticker-Library:1.0.1'
+	}
+```
 How do I use Sticker Library?
 -------------------
 
-First create holder where you want to use stickers:
+Create holder where you want to use stickers:
 
 ```xml
-<com.example.stickerlibrary.custom_views.StickerHolderView
-        android:id="@+id/sticker_holder_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+<com.nemanjamet.stickerlibrary.custom_views.StickerHolderView
+    android:id="@+id/sticker_holder_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 ```
 
 Example how to add image sticker:
@@ -30,19 +49,19 @@ Example how to add text sticker:
 
 ```kotlin
 // Create TextStickerData object
- val textStickerData = TextStickerData()
+val textStickerData = TextStickerData()
 
- // Set your text for sticker
- textStickerData.text = "Enter your text"
+// Set your text for sticker
+textStickerData.text = "Enter your text"
 
- // Set color of your text
- textStickerData.color = Color.BLUE
- 
- // Set typeface for your text sticker
- textStickerData.typeface = Typeface.DEFAULT
- 
- // Add TextStickerData to StickerHolderView
- stickerHolderView.addSticker(textStickerData)
+// Set color of your text
+textStickerData.color = Color.BLUE
+
+// Set typeface for your text sticker
+textStickerData.typeface = Typeface.DEFAULT
+
+// Add TextStickerData to StickerHolderView
+stickerHolderView.addSticker(textStickerData)
 ```
 
 Example how to remove selected sticker:
